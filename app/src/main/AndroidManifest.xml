@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ffab0.pocketprogramming"
+    android:versionCode="8"
+    android:versionName="2.0.0"
+    >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".models.Common"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme" >
+        <activity
+            android:name=".managers.MainActivity"
+            android:icon="@drawable/app_icon"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".managers.ReviewActivity"
+            android:icon="@drawable/icon_bird2"
+            android:label="@string/title_activity_review"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".managers.SummaryActivity"
+            android:icon="@drawable/icon_bird3"
+            android:label="@string/title_activity_summary"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".managers.QuestionAndAnswerActivity"
+            android:label="@string/title_activity_question_and_answer"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".managers.NoNetworkActivity"
+            android:label="@string/title_activity_no_network" >
+        </activity>
+        <activity
+            android:name=".managers.NoSummaryActivity"
+            android:label="@string/title_activity_no_summary" >
+        </activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+    </application>
+
+</manifest>

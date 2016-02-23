@@ -1,0 +1,35 @@
+<ScrollView
+    android:id="@+id/ScrollView"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:context="ffab0.pocketprogramming.fragments.PracticeFragment"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:paddingBottom="80dp"
+            >
+            <FrameLayout
+                android:id="@+id/Question"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                />
+            <FrameLayout
+                android:id="@+id/Choice"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

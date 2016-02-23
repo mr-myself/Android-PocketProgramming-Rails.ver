@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/spacing_normal"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_bird_purple"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_completed_week"
+        android:textSize="@dimen/font_larger"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/spacing_normal"
+        android:paddingTop="@dimen/spacing_normal"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_completed_week_description"
+        android:textSize="@dimen/font_normal"
+        android:gravity="center_horizontal"
+        />
+    <LinearLayout
+        android:id="@+id/NextWeekWrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/spacing_normal"
+        android:layout_marginTop="@dimen/spacing_normal"
+        >
+        <Button
+            android:id="@+id/toNextWeek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/challenge"
+            style="@style/Button"
+            />
+    </LinearLayout>
+
+</LinearLayout>

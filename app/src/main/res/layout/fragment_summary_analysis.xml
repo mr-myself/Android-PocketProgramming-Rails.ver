@@ -1,0 +1,85 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ffab0.pocketprogramming.managers.ReviewActivity"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v4.view.ViewPager
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+
+            <android.support.v4.view.PagerTabStrip
+                android:id="@+id/pager_tab_strip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/md_teal_500"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                />
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/background2"
+            android:scaleType="centerCrop"
+            />
+    </FrameLayout>
+    <ScrollView
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+        <LinearLayout
+            android:id="@+id/resultAnalysisList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/spacing_small"
+            android:paddingBottom="60dp"
+            >
+            <!-- 理解できているジャンル -->
+            <LinearLayout
+                android:id="@+id/resultAnalysisCorrect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:layout_marginBottom="@dimen/spacing_normal"
+                android:background="@drawable/background_with_shadow"
+                >
+            </LinearLayout>
+
+            <!-- もう少し理解が必要 -->
+            <LinearLayout
+                android:id="@+id/resultAnalysisWrong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:layout_marginBottom="@dimen/spacing_normal"
+                android:background="@drawable/background_with_shadow"
+                >
+            </LinearLayout> <!-- 練習が必要なジャンルカード終わり -->
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

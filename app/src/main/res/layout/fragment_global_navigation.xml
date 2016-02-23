@@ -1,0 +1,40 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    tools:context="ffab0.pocketprogramming.fragments.GlobalNavigationFragment"
+    >
+
+    <!-- TODO: 現在のActivityに合わせてアクティブ背景を当て込む-->
+    <ImageButton
+        android:id="@+id/toPractice"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@color/md_white_1000"
+        android:src="@drawable/icon_practice"
+        android:padding="@dimen/spacing_small"
+        />
+
+    <ImageButton
+        android:id="@+id/toReview"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@color/md_white_1000"
+        android:src="@drawable/icon_review"
+        android:padding="@dimen/spacing_small"
+        />
+
+    <ImageButton
+        android:id="@+id/toSummary"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@color/md_white_1000"
+        android:src="@drawable/icon_summary"
+        android:padding="@dimen/spacing_small"
+        />
+</LinearLayout>

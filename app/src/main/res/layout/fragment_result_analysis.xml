@@ -1,0 +1,74 @@
+<ScrollView
+android:layout_height="fill_parent"
+android:layout_width="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+    >
+    <LinearLayout
+        android:id="@+id/resultAnalysisList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/spacing_normal"
+        android:paddingBottom="60dp"
+        >
+        <!-- 理解できているジャンル -->
+        <LinearLayout
+            android:id="@+id/resultAnalysisCorrect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:layout_marginBottom="@dimen/spacing_normal"
+            android:background="@drawable/background_with_shadow"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_small"
+                android:text="@string/understood_genre"
+                android:textColor="@color/md_yellow_900"
+                android:background="@color/md_yellow_100"
+                android:textSize="@dimen/font_large"
+                />
+        </LinearLayout>
+
+        <!-- もう少し理解が必要 -->
+        <LinearLayout
+            android:id="@+id/resultAnalysisWrong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:layout_marginBottom="@dimen/spacing_normal"
+            android:background="@drawable/background_with_shadow"
+            >
+            <!-- ヘッダー -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_small"
+                android:text="@string/not_understood_genre"
+                android:textColor="@color/md_blue_900"
+                android:background="@color/md_blue_100"
+                android:textSize="@dimen/font_large"
+                />
+            <!-- ヘッダー終わり -->
+        </LinearLayout> <!-- 練習が必要なジャンルカード終わり -->
+        <LinearLayout
+            android:id="@+id/NextWeekWrap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/spacing_normal"
+            >
+            <Button
+                android:id="@+id/toNextWeek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/challenge_next_week"
+                style="@style/Button"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

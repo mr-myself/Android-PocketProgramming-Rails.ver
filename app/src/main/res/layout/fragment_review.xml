@@ -1,0 +1,15 @@
+<ScrollView
+    android:id="@+id/Section"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:id="@+id/reviewSectionList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="80dp"
+    android:layout_marginTop="@dimen/spacing_normal"
+    >
+</LinearLayout>
+</ScrollView>

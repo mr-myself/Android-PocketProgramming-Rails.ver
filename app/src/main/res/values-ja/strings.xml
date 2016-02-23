@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pocket Programming</string>
+    <string name="twitter_account">pocket_pro_JP</string>
+    <string name="twitter_hashtag">ポケプロ,PocketProgramming,Rails,Ruby</string>
+
+    <string name="action_settings">設定</string>
+    <string name="title_activity_global_navigation">メニュー</string>
+
+    <string name="title_activity_review">復習</string>
+    <string name="title_activity_summary">まとめ</string>
+
+    <string name="title_activity_no_network">接続不可</string>
+    <string name="title_activity_no_summary">まとめ</string>
+    <string name="title_activity_question_and_answer">問題と解説</string>
+
+    <!-- Common -->
+    <string name="next_question">次の問題へ</string>
+    <string name="nth_question" formatted="false">第%1$d問</string>
+    <string name="correct">正解</string>
+    <string name="wrong">不正解</string>
+
+
+    <!-- XML File Strings -->
+    <!-- activity_no_network -->
+    <string name="no_network">インターネットに接続できません。\n 接続状況を確認してください。</string>
+    <!-- fragment_answer -->
+    <string name="explanation">解説</string>
+    <!-- fragment_choice -->
+    <string name="no_idea">わからない</string>
+    <!-- fragment_complete_day -->
+    <string name="default_finished_day">DAY終了！お疲れさま！</string>
+    <string name="retry">再チャレンジ</string>
+    <string name="share_day_score">シェアする</string>
+    <string name="to_next_day">次の日に進む</string>
+    <string name="default_what_they_learn_in_the_day">DAYで学んだこと</string>
+    <!-- fragment_level_up_dialog -->
+    <string name="level_up_to">にレベルアップしました！</string>
+    <string name="share_twitter">Twitterでシェアしよう</string>
+    <string name="close">閉じる</string>
+    <!-- fragment_main -->
+    <string name="current_level">現在のあなたのレベル</string>
+    <string name="learning_progress">学習状況</string>
+    <string name="challenge">チャレンジ</string>
+    <!-- fragment_no_summary -->
+    <string name="no_completed_week">まだ完了したWEEKはありません。</string>
+    <string name="no_completed_week_description">WEEK（DAY7個）を修了すると、まとめを見ることができます。</string>
+    <!-- fragment_result_analysis -->
+    <string name="understood_genre">理解できているジャンル</string>
+    <string name="not_understood_genre">もう少し練習が必要なジャンル</string>
+    <string name="challenge_next_week">次のWEEKにチャレンジ</string>
+    <!-- row_practice_results -->
+    <string name="reconfirm_question_answer">▶ 解答・解説をもう一度見る</string>
+    <!-- End of XML File Strings -->
+
+
+    <!-- LevelUpDialogFragment -->
+    <string name="level_up">%1$sのレベルが</string>
+
+    <!-- DayQuestionsRepository -->
+    <!-- MainViewModel -->
+    <string name="challenge_nth_day" formatted="false">DAY%1$dにチャレンジ</string>
+
+    <!-- SummaryViewModel -->
+    <string name="challenge_nth_week" formatted="false">WEEK%1$dにチャレンジ</string>
+
+    <!-- TwitterShare -->
+    <string name="tweet_level_up" formatted="false">Pocket Programmingで%1$sのレベルが「%2$s」から「%3$s」に上がりました！</string>
+    <string name="tweet_day_score" formatted="false">【Pocket Programming】第%1$d週目の%2$d日目を修了！スコアは%3$d点でした！</string>
+
+    <!-- CompleteDayViewModel -->
+    <string name="what_they_learn_in_the_day" formatted="false">DAY%1$dで学んだこと</string>
+    <string name="finished_day" formatted="false">DAY%1$d終了！お疲れさま！</string>
+    <string name="to_week_result">今週の結果へ</string>
+
+    <string name="facebook_app_id"></string>
+</resources>
